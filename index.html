@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз</title>
+</head>
+<body>
+<div class="header">
+    <img class="logo" src="/PHP-logo.svg.png" alt="#">
+    <h1 style="margin-top: 50px; color: white;">КВИЗ</h1>
+</div>
+<form action="process.php" method="post">
+    <p><b>1.PHP е скриптен јазик за веб програмирање кој се користи за развој на...?</b></p>
+    <input type="radio" name="question1" value="dinamicni">динамични HTML содржини <br>
+    <input type="radio" name="question1" value="staticli">статички HTML содржини <br><br>
+
+
+    <p><b>2.Извршувањето на PHP кодот е на страната на ...?</b></p>
+    <input type="radio" name="question2" value="prebaruvacot">пребарувачот <br>
+    <input type="radio" name="question2" value="veb-server">веб серверот <br>
+    <input type="radio" name="question2" value="bazi-na-podatoci">серверот за управување на бази на податоци <br><br>
+
+    <p><b>3.Со кој знак започнуваат променливите во PHP?</b></p>
+    <input type="radio" name="question3" value="#"># <br>
+    <input type="radio" name="question3" value="&">&<br>
+    <input type="radio" name="question3" value="$">$ <br> <br>
+
+
+    <p><b>4.Кои од следните променливи се невалидни во PHP?</b></p>
+        <input type="checkbox" name="question4[]" value="12">ab=12</option><br>
+        <input type="checkbox" name="question4[]" value="10">$ab=10</option><br>
+        <input type="checkbox" name="question4[]" value="15">$_5ab=15</option><br>
+        <input type="checkbox" name="question4[]" value="0">$2ab=0</option>
+    <br><br>
+
+    <p><b>5.Што ќе испечати следниот израз?</b></p>
+    <p>
+        < ?php <br>
+        &x="12"+16; <br>
+        echo($x); <br>
+        ?>
+    </p>
+    <textarea name="question5" rows="4" cols="50"></textarea>
+
+    <br><br>
+
+    <p><b>6.Што ќе испечати следниот израз?</b></p>
+    <p>
+        < ?php <br>
+        $stuff = array("Hi", "5"); <br>
+        echo $stuff[1], "\n"; <br>
+        ?>
+    </p>
+    <textarea name="question6" rows="4" cols="50"></textarea><br><br>
+
+    <p><b>7.</b><select name="question7">
+        <option value="r">print_r()</option>
+        <option value="print">print()</option>
+        <option value="var_dump">var_dump()</option>
+    </select><b> дава поопширен приказ за информации за променливите кај PHP.</b></p><br><br>
+    
+    <p><b>8.Напишете ги трите видови на коментари одвоени со запирка во PHP?(коментарот да е "rezultat")</b></p>
+    <textarea name="question8" rows="4" cols="50"></textarea><br><br>
+
+    <p><b>9.Операторот === споредува...?</b></p>
+    <input type="radio" name="question9" value="tip">тип<br>
+    <input type="radio" name="question9" value="both">тип и вредност<br>
+    <input type="radio" name="question9" value="vrednost">вредност<br><br>
+
+    <p><b>10.Што ќе испечати следниот израз?</b></p>
+    <p>
+        < ?php <br>
+        $x=6; <br>
+        $y=15+$x++; <br>
+        echo "x is $x and y is $y \n" 
+    </p>
+    <input type="radio" name="question10" value="7&21">x is 7 and y is 21<br>
+    <input type="radio" name="question10" value="6&21">x is 6 and y is 21<br>
+    <input type="radio" name="question10" value="7&20">x is 7 and y is 20<br><br>
+
+    <input type="submit" value="Испрати">
+    <input type="reset" value="Избриши">
+</form>
+
+</body>
+</html>
